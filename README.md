@@ -125,7 +125,7 @@ Install via Arduino IDE Library Manager:
 
 3. **Moving average filter:** The Z-axis reading (elbow control) passes through a 5-sample circular buffer before threshold comparison, smoothing out hand vibration noise.
 
-4. **Gesture classification:** A priority-ordered set of threshold comparisons maps the current sensor state to one of 8 commands. Only one DOF is active at a time — the highest-priority gesture wins.
+4. **Gesture classification:** A priority-ordered set of threshold comparisons maps the current sensor state to one of 8 commands. Only one DOF is active at a time the highest-priority gesture wins.
 
 5. **Wireless transmission:** The command character is sent to the ESP-01 over SoftwareSerial. The ESP-01 relays it over Wi-Fi (TCP) to the arm's receiver unit.
 
@@ -206,7 +206,7 @@ Upload `arm_receiver/Arm_Nano.ino` to the Arduino Nano on the robotic arm.
 | Battery life (2× 18650) | ~45–60 minutes continuous operation |
 
 **Key observations:**
-- The 5-sample moving average filter was critical for elbow stability — raw Z-axis readings were too noisy for direct threshold comparison
+- The 5-sample moving average filter was critical for elbow stability raw Z-axis readings were too noisy for direct threshold comparison
 - Gyro offset calibration at startup was essential; without it, yaw angle drifted by ~5°/minute causing spurious gripper activations
 - Asymmetric base thresholds (−5 left, +7 right) were needed due to natural hand resting posture not being symmetric
 
