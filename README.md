@@ -1,6 +1,6 @@
 # Hand Gesture Controlled 4-DOF Robotic Arm
 
-> A wearable glove controller that maps real-time hand gestures to wireless commands for a 4-degree-of-freedom servo robotic arm — no buttons, no joysticks, just natural hand motion.
+> A wearable glove controller that maps real-time hand gestures to wireless commands for a 4-degree-of-freedom servo robotic arm no buttons, no joysticks, just natural hand motion.
 
 ---
 
@@ -16,7 +16,7 @@
 
 This project was developed during **SIWES (Students' Industrial Work Experience Scheme)** at **Hub360 Circuits Ltd, Abuja, Nigeria**.
 
-The system uses an **MPU6050 IMU** mounted on a wearable glove to detect hand tilt, lift, and wrist-twist gestures. An **Arduino Nano** classifies these gestures in real time and transmits single-character command tokens to an **ESP-01 Wi-Fi module**, which relays them wirelessly to the robotic arm receiver. The arm's four servo-driven joints — base, shoulder, elbow, and gripper — respond directly to operator hand movements.
+The system uses an **MPU6050 IMU** mounted on a wearable glove to detect hand tilt, lift, and wrist-twist gestures. An **Arduino Nano** classifies these gestures in real time and transmits single-character command tokens to an **ESP-01 Wi-Fi module**, which relays them wirelessly to the robotic arm receiver. The arm's four servo-driven joints base, shoulder, elbow, and gripper respond directly to operator hand movements.
 
 The control firmware uses two complementary MPU6050 libraries simultaneously: one for raw accelerometer readings (tilt detection) and another for fused angle computation (gyro-integrated yaw for gripper control). A 5-sample moving average filter reduces noise on the elbow axis.
 
