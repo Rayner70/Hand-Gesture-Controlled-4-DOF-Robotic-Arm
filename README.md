@@ -229,7 +229,7 @@ Upload `arm_receiver/Arm_Nano.ino` to the Arduino Nano on the robotic arm.
 |---|---|
 | Programme | SIWES (Industrial Training) |
 | Organisation | Hub360 Circuits Ltd, Abuja, Nigeria |
-| Year | 2023/2024 |
+| Year | 2024/2025 |
 | Developer | Raphael Ebubechi Efita |
 | Institution | Federal University of Technology, Minna |
 | Department | Mechatronics Engineering |
